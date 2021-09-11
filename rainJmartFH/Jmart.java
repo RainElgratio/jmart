@@ -7,10 +7,26 @@ package rainJmartFH;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Jmart
+public class Jmart main (String[]):void
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public int x;
+    public int before, after;
+    
+    getPromo(x)
+    {
+        return 0;
+    }
+    
+    getCustomer():String
+    {
+        return "oop"
+    }
+    getDiscountPercentage(int,int):float
+    getDiscountPrice(int,float):int
+    getOriginalPrice(int,float):int
+    getCommissionMultiplier():float
+    getAdjustedPrice(int):int
+    getAdminFree(int):int
 
     /**
      * Constructor for objects of class Jmart
