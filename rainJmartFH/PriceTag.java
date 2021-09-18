@@ -10,13 +10,13 @@ public class PriceTag
     public double price;
     
     public PriceTag(double price){
-        double this.price = price;
-        double this.discount = 0.0;
+        this.price = price;
+        this.discount = 0.0;
     }
     
     public PriceTag(double price, double discount){
-        double this.price = price;
-        double this.discount = discount;
+        this.price = price;
+        this.discount = discount;
     }
     
     public double getAdjustedPrice(){
