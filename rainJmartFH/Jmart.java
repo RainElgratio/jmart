@@ -6,15 +6,15 @@ public class Jmart{
         System.out.print("program berjalan");
     }
     
-    int getPromo(){
+    public int getPromo(){
         return 0;
     }
     
-    String getCustomer(){
+    public String getCustomer(){
         return "oop";
     }
     
-    float getDiscountPercentage(int before, int after){
+    public float getDiscountPercentage(int before, int after){
         float percentage;
         
         if(before < after){
@@ -26,8 +26,8 @@ public class Jmart{
         }
     }
     
-    int getDiscountedPrice(int price, float discountPercentage){
-        int result = price * (discountPercentage/100);
+    public int getDiscountedPrice(int price, float discountPercentage){
+        float result = price * (discountPercentage/100);
         
         if(discountPercentage > 100){
             return 0;
@@ -37,28 +37,19 @@ public class Jmart{
         }
     }
     
-    int getOriginalPrice(int discountedprice, float discountPercentage){
+    public int getOriginalPrice(int discountedPrice, float discountPercentage){
         return discountedPrice/(1 - discountPercentage);
     }
     
-    float getCommissionMultyplier(){
+    public float getCommissionMultyplier(){
         return 0.05;
     }
     
-    int getAdjustedPrice(int price){
+    public int getAdjustedPrice(int price){
         return (price*0.05) + price;
     }
     
-    int getAdminFee(int price){
+    public int getAdminFee(int price){
         return price*0.05;
-    }
-}
-        
-        if(discountPercentage > 100){
-            return 0;
-        }
-        else{
-            return result;
-        }
     }
 }
