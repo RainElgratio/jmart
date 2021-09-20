@@ -52,4 +52,16 @@ public class Jmart{
     public int getAdminFee(int price){
         return price*0.05;
     }
+    
+    public Product createProduct(){
+        return null;
+    }
+    
+    public Coupon createCoupon(){
+        return null;
+    }
+    
+    public ShipmentDuration createShipmentDuration(){
+        return null;
+    }
 }
