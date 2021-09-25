@@ -9,5 +9,5 @@ comment3.target=double\ getAdjustedPrice()
 comment4.params=
 comment4.target=double\ getAdminFee()
 comment5.params=
-comment5.target=double\ DiscountedPrice()
+comment5.target=double\ getDiscountedPrice()
 numComments=6

@@ -26,7 +26,7 @@ public class Jmart{
         }
     }
     
-    public int getDiscountedPrice(int price, float discountPercentage){
+    public float getDiscountedPrice(int price, float discountPercentage){
         float result = price * (discountPercentage/100);
         
         if(discountPercentage > 100){
@@ -37,20 +37,20 @@ public class Jmart{
         }
     }
     
-    public int getOriginalPrice(int discountedPrice, float discountPercentage){
+    public float getOriginalPrice(int discountedPrice, float discountPercentage){
         return discountedPrice/(1 - discountPercentage);
     }
     
     public float getCommissionMultyplier(){
-        return 0.05;
+        return 5/100;
     }
     
     public int getAdjustedPrice(int price){
-        return (price*0.05) + price;
+        return (price*(5/100)) + price;
     }
     
     public int getAdminFee(int price){
-        return price*0.05;
+        return price*(5/100);
     }
     
     public Product createProduct(){
@@ -62,6 +62,10 @@ public class Jmart{
     }
     
     public ShipmentDuration createShipmentDuration(){
+        return null;
+    }
+    
+    public Product create(){
         return null;
     }
 }

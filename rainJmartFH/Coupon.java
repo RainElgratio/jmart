@@ -5,7 +5,7 @@ import java.util.Enumeration;
 /**
  * Write a description of class Coupun here.
  *
- * @author (your name)
+ * @author rain
  * @version (a version number or a date)
  */
 public class Coupon
@@ -36,7 +36,7 @@ public class Coupon
     }
     
     public boolean canApply(PriceTag pricetag){
-        if(PriceTag.getAdjustedPrice >= minimum && used == false){
+        if(PriceTag.getAdjustedPrice() >= minimum && used == false){
             return true;
         }
         else{

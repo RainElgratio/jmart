@@ -3,9 +3,9 @@ package rainJmartFH;
 public class PriceTag
 {
     // instance variables - replace the example below with your own
-    public double COMMISSION_MULTIPLIER = 0.05;
-    public double BOTTOM_PRICE = 20000.0;
-    public double BOTTOM_FEE = 1000.0;
+    public static final double COMMISSION_MULTIPLIER = 0.05;
+    public static final double BOTTOM_PRICE = 20000.0;
+    public static final double BOTTOM_FEE = 1000.0;
     public double discount;
     public double price;
     
@@ -20,19 +20,19 @@ public class PriceTag
     }
     
     public double getAdjustedPrice(){
-        return DiscountedPrice() - getAdminFee();
+        return (getDiscountedPrice() - getAdminFee());
     }
     
     public double getAdminFee(){
         if(BOTTOM_PRICE != price){
-            return BOTTOM_PRICE;
+            return BOTTOM_FEE;
         }
         else{
-            return DiscountedPrice() - (DiscountedPrice()*COMMISSION_MULTIPLIER);
+            return getDiscountedPrice() - (getDiscountedPrice()*COMMISSION_MULTIPLIER);
         }
     }
     
-    private double DiscountedPrice(){
+    private double getDiscountedPrice(){
         if(discount > 100.0){
             discount = 100.0;
         }
