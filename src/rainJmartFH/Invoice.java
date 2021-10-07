@@ -35,4 +35,8 @@ public class Invoice
         WAITING_CONFIRMAITON, CANCELLED, ON_PROGRESS, ON_DELIVERY, COMPLAINT, 
         FINISHED, FAILED
     }
+    
+    enum Rating{
+        NONE, BAD, NEUTRAL, GOOD
+    }
 }

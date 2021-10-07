@@ -10,6 +10,7 @@ package rainJmartFH;
 public class Shipment
 {
     
+    
     public String address;
     public int shipmentCost;
     public Duration duration;
@@ -21,9 +22,6 @@ public class Shipment
         // initialise instance variables
         x = 0;
     }
-
-    
-    public int sampleMethod(int y)
     
     
     public class Duration
