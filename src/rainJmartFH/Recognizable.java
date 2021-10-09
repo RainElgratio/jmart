@@ -11,15 +11,28 @@ public class Recognizable
 {
     // instance variables - replace the example below with your own
     public int id;
+
+    //constructor
     protected Recognizeable(int id){
         this.id = id;
     }
-    
+
+    public <T> int setClosingId(Class<T> Recognizable, int id) {
+        return 0;
+    }
+
+    public <T> int getClosingId(Class<T> Recognizable){
+        return 0;
+    }
     public boolean equals(Object id){
-        return null;
+        return false;
     }
     public boolean equals(Recognizable id){
-        return null;
+        return false;
+    }
+
+    public int compareTo(Recognizable id){
+        return 0;
     }
     
 }
