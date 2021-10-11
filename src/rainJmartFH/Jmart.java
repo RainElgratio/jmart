@@ -38,7 +38,7 @@ public class Jmart{
     }
     
     public float getOriginalPrice(int discountedPrice, float discountPercentage){
-        return discountedPrice/(1 - discountPercentage);
+        return discountedPrice/(1 - (discountPercentage/100));
     }
     
     public float getCommissionMultyplier(){

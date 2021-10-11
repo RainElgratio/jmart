@@ -19,8 +19,7 @@ public class Shipment
     
     public Shipment(String address, int shipmentCost, Duration duration, String receipt)
     {
-        // initialise instance variables
-        x = 0;
+
     }
     
     
@@ -35,7 +34,7 @@ public class Shipment
         private byte bit;
 
     
-        private Duration(int bit)
+        private Duration(byte bit)
         {
             this.bit = bit;
         }
@@ -56,11 +55,11 @@ public class Shipment
     {
         byte bit;
         
-        public MultiDuration(Duration[]){
-            return null;
+        public MultiDuration(Duration[] durations){
+
         }
         
-        public boolean isDuration(Duration){
+        public boolean isDuration(Duration duration){
             return false;
         }
     }

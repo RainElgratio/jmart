@@ -31,7 +31,6 @@ public class PriceTag
             return getDiscountedPrice() - (getDiscountedPrice()*COMMISSION_MULTIPLIER);
         }
     }
-    
     private double getDiscountedPrice(){
         if(discount > 100.0){
             discount = 100.0;

@@ -2,7 +2,7 @@ package rainJmartFH;
 
 
 /**
- * Write a description of class Recognizeable here.
+ * Write a description of class Recognizable here.
  *
  * @author rain
  * @version (a version number or a date)
@@ -13,7 +13,7 @@ public class Recognizable
     public int id;
 
     //constructor
-    protected Recognizeable(int id){
+    protected Recognizable(int id){
         this.id = id;
     }
 

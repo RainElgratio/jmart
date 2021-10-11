@@ -46,6 +46,11 @@ public class Coupon
     
     public double apply(PriceTag pricetag){
         used = true;
+        return pricetag.getAdjustedPrice()-cut;
+    }
+
+    public enum Type{
+        DISCOUNT, REBATE
     }
 
     

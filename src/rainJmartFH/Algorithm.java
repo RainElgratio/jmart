@@ -1,10 +1,33 @@
 package rainJmartFH;
 
+import java.util.Comparator;
 import java.util.Iterator;
+import java.util.List;
 
 public class Algorithm{
     private Algorithm(){
 
+    }
+
+
+
+    public <T> List<T> collect(T []array, T value){
+        return null;
+    }
+    public <T> List<T> collect(Iterable<T> iterable, T value){
+        return null;
+    }
+    public <T> List<T> collect(Iterator<T> iterator, T value){
+        return null;
+    }
+    public <T> List<T> collect(T []array, Predicate<T> pred){
+        return null;
+    }
+    public <T> List<T> collect(Iterable<T> iterable, Predicate<T> pred){
+        return null;
+    }
+    public <T> List<T> collect(Iterator<T> iterator, Predicate<T> pred){
+        return null;
     }
 
 
@@ -75,8 +98,55 @@ public class Algorithm{
     public <T> T max(T first, T second){
         return null;
     }
+    public <T> T max(T []array){
+        return null;
+    }
+    public <T> T max(Iterable<T> iterable){
+        return null;
+    }
+    public <T> T max(Iterator<T> iterator){
+        return null;
+    }
+    public <T> T max(T first, T second, Comparator<? super T> comparator){
+        return null;
+    }
+    public <T> T max(T []array, Comparator<? super T> comparator){
+        return null;
+    }
+    public <T> T max(Iterable<T> iterable, Comparator<? super T> comparator){
+        return null;
+    }
+    public <T> T max(Iterator<T> iterator, Comparator<? super T> comparator){
+        return null;
+    }
+
+
+
     public <T> T min(T first, T second){
         return null;
     }
+    public <T> T min(T []array){
+        return null;
+    }
+    public <T> T min(Iterable<T> iterable){
+        return null;
+    }
+    public <T> T min(Iterator<T> iterator){
+        return null;
+    }
+    public <T> T min(T first, T second,  Comparator<? super T> comparator){
+        return null;
+    }
+    public <T> T min(T []array, Comparator<? super T> comparator){
+        return null;
+    }
+    public <T> T min(Iterable<T> iterable, Comparator<? super T> comparator){
+        return null;
+    }
+    public <T> T min(Iterator<T> iterator, Comparator<? super T> comparator){
+        return null;
+    }
+
+
 
 }

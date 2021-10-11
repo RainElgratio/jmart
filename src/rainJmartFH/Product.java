@@ -3,7 +3,7 @@ package rainJmartFH;
 
 public class Product{
     private int idCounter;
-    public int id;
+    public int id = 0;
     public String name;
     public int weight;
     public boolean conditionUsed;
@@ -18,6 +18,8 @@ public class Product{
         this.conditionUsed = conditionUsed;
         this.pricetag = pricetag;
         this.category = category;
+        this.idCounter++;
+        this.id = this.idCounter;
     }
 
 }
