@@ -6,8 +6,8 @@ public class PriceTag
     public static final double COMMISSION_MULTIPLIER = 0.05;
     public static final double BOTTOM_PRICE = 20000.0;
     public static final double BOTTOM_FEE = 1000.0;
-    public double discount;
-    public double price;
+    public static double discount;
+    public static double price;
     
     public PriceTag(double price){
         this.price = price;
@@ -19,11 +19,11 @@ public class PriceTag
         this.discount = discount;
     }
     
-    public double getAdjustedPrice(){
+    public static double getAdjustedPrice(){
         return getDiscountedPrice() - getAdminFee();
     }
     
-    public double getAdminFee(){
+    public static double getAdminFee(){
         if(BOTTOM_PRICE != price){
             return BOTTOM_FEE;
         }
@@ -31,7 +31,7 @@ public class PriceTag
             return getDiscountedPrice() - (getDiscountedPrice()*COMMISSION_MULTIPLIER);
         }
     }
-    private double getDiscountedPrice(){
+    private static double getDiscountedPrice(){
         if(discount > 100.0){
             discount = 100.0;
         }

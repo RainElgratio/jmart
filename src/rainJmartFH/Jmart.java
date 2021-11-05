@@ -1,71 +1,36 @@
 package rainJmartFH;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+import com.google.gson.*;
 
-public class Jmart{
-    public static void main(String[] args){
-        System.out.print("program berjalan");
+class Jmart
+{
+    class Country
+    {
+        public String name;
+        public int population;
+        public List<String> listOfStates;
     }
-    
-    public int getPromo(){
-        return 0;
-    }
-    
-    public String getCustomer(){
-        return "oop";
-    }
-    
-    public float getDiscountPercentage(int before, int after){
-        float percentage;
-        
-        if(before < after){
-            return 0;
+
+    public static void main(String[] args)
+    {
+        String filepath = "D:\\city.json";
+        Gson gson = new Gson();
+        try
+        {
+            BufferedReader br = new BufferedReader(new FileReader(filepath));
+            Country input = gson.fromJson(br, Country.class);
+            System.out.println("name: " + input.name);
+            System.out.println("population: " + input.population);
+            System.out.println("states:");
+            input.listOfStates.forEach(state -> System.out.println(state));
         }
-        else{
-            percentage = 100 - ((after/before) * 100);
-            return percentage;
+        catch (IOException e)
+        {
+            e.printStackTrace();
         }
-    }
-    
-    public float getDiscountedPrice(int price, float discountPercentage){
-        float result = price * (discountPercentage/100);
-        
-        if(discountPercentage > 100){
-            return 0;
-        }
-        else{
-            return result;
-        }
-    }
-    
-    public float getOriginalPrice(int discountedPrice, float discountPercentage){
-        return discountedPrice/(1 - (discountPercentage/100));
-    }
-    
-    public float getCommissionMultyplier(){
-        return 5/100;
-    }
-    
-    public int getAdjustedPrice(int price){
-        return (price*(5/100)) + price;
-    }
-    
-    public int getAdminFee(int price){
-        return price*(5/100);
-    }
-    
-    public Product createProduct(){
-        return null;
-    }
-    
-    public Coupon createCoupon(){
-        return null;
-    }
-    
-    public ShipmentDuration createShipmentDuration(){
-        return null;
-    }
-    
-    public Product create(){
-        return null;
     }
 }

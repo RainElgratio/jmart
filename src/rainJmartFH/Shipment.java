@@ -7,7 +7,7 @@ package rainJmartFH;
  * @author rain
  * @version (a version number or a date)
  */
-public class Shipment
+public class Shipment implements FileParser
 {
     
     
@@ -21,8 +21,10 @@ public class Shipment
     {
 
     }
-    
-    
+
+
+
+
     public class Duration
     {
         // instance variables - replace the example below with your own
@@ -51,8 +53,7 @@ public class Shipment
     }
     
     
-    public class MultiDuration
-    {
+    public class MultiDuration{
         byte bit;
         
         public MultiDuration(Duration[] durations){
@@ -62,6 +63,21 @@ public class Shipment
         public boolean isDuration(Duration duration){
             return false;
         }
+    }
+
+    @Override
+    public boolean read(String content) {
+        return false;
+    }
+
+    @Override
+    public Object write(String content) {
+        return null;
+    }
+
+    @Override
+    public Object newInstance(String content) {
+        return null;
     }
 }
 

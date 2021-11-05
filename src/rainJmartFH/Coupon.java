@@ -8,14 +8,14 @@ import java.util.Enumeration;
  * @author rain
  * @version (a version number or a date)
  */
-public class Coupon
+public class Coupon extends Recognizable
 {
     // instance variables - replace the example below with your own
-    public String name;
-    public int code;
-    public double cut;
-    public Type type;
-    public double minimum;
+    public final String name;
+    public final int code;
+    public final double cut;
+    public final Type type;
+    public final double minimum;
     private boolean used;
 
     /**
@@ -23,6 +23,7 @@ public class Coupon
      */
     public Coupon(String name, int code, Type type, double cut, double minimum){
         // initialise instance variables
+        super(code);
         this.name = name;
         this.code = code;
         this.type = type;
@@ -36,7 +37,8 @@ public class Coupon
     }
     
     public boolean canApply(PriceTag pricetag){
-        if(PriceTag.getAdjustedPrice() >= minimum && used == false){
+
+        if(PriceTag.getAdjustedPrice() >= this.minimum && !this.used){
             return true;
         }
         else{
@@ -45,7 +47,7 @@ public class Coupon
     }
     
     public double apply(PriceTag pricetag){
-        used = true;
+        this.used = true;
         return pricetag.getAdjustedPrice()-cut;
     }
 
