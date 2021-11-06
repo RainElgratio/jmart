@@ -1,6 +1,8 @@
 package rainJmartFH;
 
 
+import java.text.SimpleDateFormat;
+
 /**
  * Write a description of class Shipment here.
  *
@@ -28,6 +30,7 @@ public class Shipment implements FileParser
     public class Duration
     {
         // instance variables - replace the example below with your own
+        public SimpleDateFormat ESTIMATION_FORMAT;
         public Duration INSTANT;
         public Duration SAME_DAY;
         public Duration NEXT_DAY;

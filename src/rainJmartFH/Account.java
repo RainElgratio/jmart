@@ -8,7 +8,7 @@ package rainJmartFH;
  * @version (a version number or a date)
  */
 
-public class Account extends Recognizable implements FileParser
+public class Account extends Serializable implements FileParser
 {
     public String name;
     public String email;

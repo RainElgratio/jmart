@@ -1,7 +1,7 @@
 package rainJmartFH;
 
 
-public class Product extends Recognizable{
+public class Product extends Serializable {
     private int idCounter;
     public int id = 0;
     public String name;

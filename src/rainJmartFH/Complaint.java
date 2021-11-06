@@ -1,7 +1,6 @@
 package rainJmartFH;
 
 
-import java.io.File;
 import java.util.Date;
 
 /**
@@ -10,7 +9,7 @@ import java.util.Date;
  * @author rain
  * @version
  */
-public class Complaint extends Recognizable implements FileParser
+public class Complaint extends Serializable implements FileParser
 {
     
     public int paymentId;
@@ -21,7 +20,7 @@ public class Complaint extends Recognizable implements FileParser
     public Complaint(int id, Payment payment, String desc, Date date)
     {
         super(id);
-        this.id = id;
+        this.paymentId = id;
         this.date = date;
         this.desc = desc;
     }
@@ -30,7 +29,7 @@ public class Complaint extends Recognizable implements FileParser
     public Complaint(int id, int buyerId, int storeId, int paymentId, String desc, Date date)
     {
         super(id);
-        this.id = id;
+        this.paymentId = id;
         this.date = date;
         this.desc = desc;
     }

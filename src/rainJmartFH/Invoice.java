@@ -9,7 +9,7 @@ import java.util.Date;
  * @author rain
  * @version (a version number or a date)
  */
-abstract class Invoice extends Recognizable implements FileParser
+abstract class Invoice extends Serializable implements FileParser
 {
     
     public Date date;

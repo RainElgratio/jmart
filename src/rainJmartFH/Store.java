@@ -7,8 +7,10 @@ package rainJmartFH;
  * @author rain
  * @version (a version number or a date)
  */
-public class Store extends Recognizable implements FileParser
+public class Store extends Serializable implements FileParser
 {
+    public String REGEX_PHONE;
+    public String REGEX_NAME;
     public String nama;
     public String address;
     public String phoneNumber;
@@ -46,6 +48,10 @@ public class Store extends Recognizable implements FileParser
     public String toString(){
         String s = "name: PT Madju Merdeka\naddress: Jl. Kukusan\nphoneNumber: 628777xxxx";
         return s;
+    }
+
+    public boolean validate(){
+        return false;
     }
 
     
