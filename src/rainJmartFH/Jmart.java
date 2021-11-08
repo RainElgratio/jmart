@@ -18,7 +18,13 @@ class Jmart
     }
 
 
+    public static List<Product> filterByAccountId(List<Product> list, int accountId, int page, int pageSize){
+        return null;
+    }
     public static List<Product> filterByCategory(List<Product> list, ProductCategory category){
+        return null;
+    }
+    public static List<Product> filterByName(List<Product> list, String search, int page, int pageSize){
         return null;
     }
     public static List<Product> filterByPrice(List<Product> list, double minPrice, double maxPrice){
@@ -49,6 +55,11 @@ class Jmart
         {
             e.printStackTrace();
         }
+    }
+
+    private static List<Product> paginate(List<Product> list, int page, int pageSize, Predicate<Product> pred)
+    {
+        return null;
     }
 
 
