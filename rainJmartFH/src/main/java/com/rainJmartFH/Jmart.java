@@ -1,4 +1,8 @@
-package rainJmartFH;
+package com.rainJmartFH;
+
+import org.springframework.boot.SpringApplication;
+
+
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -7,9 +11,16 @@ import java.io.IOException;
 import java.util.List;
 import com.google.gson.*;
 import com.google.gson.stream.JsonReader;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication;
+
 
 class Jmart
 {
+
+
     class Country
     {
         public String name;
@@ -40,6 +51,7 @@ class Jmart
 
     public static void main(String[] args)
     {
+        SpringApplication.run(Jmart.class,args);
         String filepath = "D:\\jsonFiles\\city.json";
         Gson gson = new Gson();
         try

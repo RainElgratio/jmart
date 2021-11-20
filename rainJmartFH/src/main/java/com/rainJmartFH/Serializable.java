@@ -17,42 +17,32 @@ abstract class Serializable
 
     //constructor
     protected Serializable(int id){
-        mapCounter = new HashMap<>();
-        mapCounter.put(getClass(), id);
-        this.id = id;
+        Integer counter = mapCounter.get(getClass());
+        counter = counter == null ? 0 : counter + 1;
+        mapCounter.put(getClass(), counter);
+        this.id = counter;
+
     }
 
 
     public static <T> int getClosingId(Class<T> clazz){
-        if(clazz.isAssignableFrom(Serializable.class)){
-            return 0;
-        }else{
-            return 1;
-        }
+        return mapCounter.get(clazz);
     }
     public static <T> int setClosingId(Class<T> clazz, int id) {
-        if(clazz.isAssignableFrom(Serializable.class)){
-            return 0;
-        }else{
-            return 1;
-        }
+        return mapCounter.put(clazz, id);
     }
 
 
     public boolean equals(Object other){
-        if(!(other instanceof Serializable)){
-            Serializable checked = (Serializable)other;
-            return checked.id == this.id;
-        }
-        return false;
+        return other instanceof Serializable && ((Serializable) other).id == id;
     }
     public boolean equals(Serializable other){
-        return this.id == other.id;
+        return other.id == id;
     }
 
 
     public int compareTo(Serializable id){
-        return 0;
+        return Integer.compare(this.id, other.id);
     }
 
 

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08bde728-3874-44b3-a7ca-000ac96b81c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jmart.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rainJmartFH/src/main/java/com/rainJmartFH/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsmart.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/gson-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Algorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Complaint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Coupon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/FileParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Invoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Jmart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/JsonTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Predicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/PriceTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/ProductCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/ProductRating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Serializable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Shipment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rainJmartFH/Transactor.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/rainJmartFH">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21ACiI2Szh4gDo4oWUcy2SBrzuc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="RainJmartFhApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rainJmartFH.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rainJmartFH.RainJmartFhApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08bde728-3874-44b3-a7ca-000ac96b81c3" name="Changes" comment="" />
+      <created>1637374631355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637374631355</updated>
+      <workItem from="1637374632851" duration="3923000" />
+      <workItem from="1637380277365" duration="915000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rainJmartFH/src/main/java/com/rainJmartFH/controller/AccountController.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
